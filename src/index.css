@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.App {
+  background-image: url(./pics/hot.jpg);
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4 ease;
+}
+
+.App.cold {
+  background-image: url(./pics/cold.jpg);
+}
+
+.App.rain {
+  background-image: url(./pics/rain-raining.gif);
+  background-repeat: repeat;
+}
+
+.App.snow {
+  background-image: url(./pics/snowing-icegif.gif);
+  background-repeat: repeat;
+}
+
+.App.cloud {
+  background-image: url(./pics/EmotionalOnlyGoldfinch-size_restricted.gif);
+  background-repeat: repeat;
+}
+
+main {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8));
+  padding: 25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  appearance: none;
+  background: none;
+  border: none;
+
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+
+  color: rgb(32, 31, 31);
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.weather-box {
+  text-align: center;
+}
+
+.weather-box .temp {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 30px auto;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 15px;
+  color: #fff;
+  font-size: 102px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
