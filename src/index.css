@@ -24,13 +24,8 @@ body {
   background-repeat: repeat;
 }
 
-.App.snow {
-  background-image: url(./pics/snowing-icegif.gif);
-  background-repeat: repeat;
-}
-
-.App.cloud {
-  background-image: url(./pics/EmotionalOnlyGoldfinch-size_restricted.gif);
+.App.drizzle {
+  background-image: url(./pics/drizzle.gif);
   background-repeat: repeat;
 }
 
