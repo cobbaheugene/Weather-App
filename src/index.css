@@ -12,7 +12,7 @@ body {
   background-image: url(./pics/hot.jpg);
   background-size: cover;
   background-position: bottom;
-  transition: 0.4 ease;
+  transition: 0.4S ease;
 }
 
 .App.cold {
@@ -99,4 +99,10 @@ main {
   color: #fff;
   font-size: 48px;
   font-weight: 700;
+}
+
+.weather-box .description {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
 }

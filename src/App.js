@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import classNames from "classnames";
 
 const api = {
   key: '8ce9e4665b539ad3d8a0657d4a9cd207',
@@ -39,8 +38,8 @@ function App() {
   return (
     <div className={
       (typeof weather.main == 'undefined') ? 'App'
-      :(weather.main.temp < 16 && weather.weather[0].main != 'Rain') ? 'App cold'
-      :(weather.weather[0].main == 'Rain') ? 'App rain'
+      :(weather.main.temp < 16 && weather.weather[0].main != 'Rain' && weather.weather[0].main != 'Thunderstorm') ? 'App cold'
+      :(weather.weather[0].main == 'Rain' || weather.weather[0].main == 'Thunderstorm') ? 'App rain'
       :'App'}>
       <main>
         <div className='search-box'>
@@ -65,6 +64,7 @@ function App() {
               {Math.round(weather.main.temp)}°C
             </div>
             <div className="weather">{weather.weather[0].main}</div>
+            <div className="description">Description: {capitalizeFirstLetter(weather.weather[0].description)}</div>
           </div>
         </div>
         ) : ('')}
@@ -73,7 +73,9 @@ function App() {
   );
 }
 
-
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
 
 
 
