@@ -177,7 +177,12 @@ h5{
     background-size: cover;
     background-position: bottom;
     transition: 0.1s ease;
-    
+  }
+  .temp{
+    font-weight: 700;
+    padding-left: 310px;
+    font-size: 95px;
+    margin-top:-10px;
   }
 
   .search-box .search-bar {
